@@ -1,0 +1,27 @@
+
+# BEGIN WordPress
+	
+SetEnv MAGICK_THREAD_LIMIT 1
+<IfModule mod_security.c>
+  SecFilterEngine Off
+  SecFilterScanPOST Off
+</IfModule>
+
+php_value upload_max_filesize 120M
+php_value post_max_size 130M
+php_value memory_limit 150M
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /blog/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /blog/index.php [L]
+</IfModule>
+
+# END WordPress
+<files wp-config.php>
+order allow,deny
+deny from all
+</files>

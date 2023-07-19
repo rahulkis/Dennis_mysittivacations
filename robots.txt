@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /home_club.php
+Disallow: /profile.php
+Disallow: /admin/home.php
+Sitemap: https://www.mysittivacations.com/sitemap.xml

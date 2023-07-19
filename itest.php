@@ -1,0 +1,1 @@
+<iframe src="https://mysitti.com/live2/dj_streaming.php?n=<?php echo $_GET['n'] ?>&host_id=<?php echo $_GET['host_id'];?>&user_type=<?php echo $_GET['user_type']; ?>" style="width: 100%; height: 100%;" scrolling="no" frameborder="0"></iframe>
